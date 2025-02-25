@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit User Profile</title>
+  <link rel="stylesheet" href="editProfile.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- <form id="upload-form" enctype="multipart/form-data"> -->
+      <h2>Edit User Profile</h2>
+          <div class="picture">
+            <img id="photoURL"
+              src="../assets/picture.jfif"
+              alt=""/>
+          </div>
+          <div class="input-field">
+            <input type="file" id="fileInput">
+        </div>
+      <div class="inputs">
+        <div class="input-field">
+          <input type="text" required id="firstName">
+          <label>First Name</label>
+        </div>
+        <div class="input-field">
+          <input type="text" required id="lastName">
+          <label>Last Name</label>
+        </div>
+      </div>
+      <div class="input-field">
+        <input type="text" required id="description">
+        <label>Description</label>
+      </div>
+      <div class="inputs">
+      <button id="closeBtn">Close</button>
+      <button id="saveChangesBtn" type="submit">Save Changes</button>
+      </div>
+    <!-- </form> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="module" src="../main.js"></script>
+  <script type="module" src="editProfile.js"></script>
+</body>
+
+</html>

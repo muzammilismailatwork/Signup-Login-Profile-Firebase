@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+  <div class="wrapper">
+      <h2>User Profile</h2>
+          <div class="picture">
+            <img id="profileImg"
+              src="../assets/picture.jfif"
+              alt=""/>
+          </div>
+      <div class="fullName">
+        <div>
+          <p id="firstName">First Name</p>
+        </div>
+        <div>
+          <p id="lastName">Last Name</p>
+        </div>
+      </div>
+      <div class="inputs">
+        <div>
+          <p id="userName">Username</p>
+        </div>
+        <div>
+          <p id="email">Email</p>
+        </div>
+      </div>
+      <div>
+        <p id="description">Description</p>
+      </div>
+      <div class="inputs">
+        <button id="logOutBtn">Logout</button>
+        <button id="editBtn">Edit</button>
+      </div>
+  </div>
+  <script type="module" src="../main.js"></script>
+  <script type="module" src="profile.js"></script>
+</body>
+
+</html>

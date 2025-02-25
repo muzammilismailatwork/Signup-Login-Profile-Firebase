@@ -198,3 +198,31 @@ export function forgotPass(email){
         console.log(errorMessage)
     });
 }
+
+// Edit Profile  
+export async function updateProfile(
+    description,
+    uid,
+    photoURL,
+    firstName,
+    lastName,
+    userDetails,
+){
+    await setDoc(doc(db, "users", uid),{
+        userDetailsWithOutPassword: {
+            ...userDetails,
+            firstName,
+            lastName,
+            description,
+            photoURL,
+        }
+    })
+    console.log("user profile updated successfully")
+    console.log(userDetails)
+    setTimeout(() => {
+        window.location.href = "../profile/profile.html";
+    }, 2000);
+
+}
+
+
