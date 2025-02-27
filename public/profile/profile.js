@@ -12,7 +12,7 @@ let loggedInUserDetails;
 let loggedInUserUid;
 
 function editHandler(){
-    window.location.href = "../editProfile/editprofile.html"
+    window.location.href = "../editProfile/editProfile.html"
 }
 function logOutHandler(){
     signOutUser()

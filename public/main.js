@@ -48,7 +48,7 @@ export async function signUpUser(userDetails) {
     catch (error) {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorMessage);
+        alert(errorMessage);
     }
 }
 
@@ -96,7 +96,7 @@ export async function signInWithGoogle() {
         const credential = GoogleAuthProvider.credentialFromError(error);
         // ...
         console.log(errorCode)
-        console.log(errorMessage)
+        alert(errorMessage)
         // console.log(email)
         console.log(credential)
     }
@@ -120,7 +120,7 @@ export async function login(email, password) {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log(errorCode, "===>> errorCode");
-        console.log(errorMessage, "===>> errorMessage");
+        alert(errorMessage, "===>> errorMessage");
     }
     // ...
 }
@@ -136,7 +136,7 @@ export function signOutUser() {
         }, 2000)
     }).catch((error) => {
         // An error happened.
-        console.log(error)
+        alert(error)
     });
 }
 
@@ -178,7 +178,7 @@ export async function getSingleDocument(uid) {
         return userDetailsWithOutPassword;
     } else {
         // docSnap.data() will be undefined in this case
-        console.log("No such document!");
+        alert("No such document!");
     }
 } 
 
@@ -195,7 +195,7 @@ export function forgotPass(email){
         const errorCode = error.code;
         const errorMessage = error.message;
         // ..
-        console.log(errorMessage)
+        alert(errorMessage)
     });
 }
 
